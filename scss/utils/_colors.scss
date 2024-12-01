@@ -1,0 +1,12 @@
+$colors:(
+	dark-blue-article: #131620,
+	dark-blue-section: #161926,
+	text-blue-article: #666E97,
+	text-calary-article: #8C98A9,
+	text-calary-article-bg: #1C2033,
+	background-color-logo: rgba(255, 199, 1, 0.1),
+);
+
+@function getColor($name) {
+    @return map-get($colors, $name);
+}
