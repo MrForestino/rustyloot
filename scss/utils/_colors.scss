@@ -4,7 +4,10 @@ $colors:(
 	text-blue-article: #666E97,
 	text-calary-article: #8C98A9,
 	text-calary-article-bg: #1C2033,
+	bgc-hero-menu: #161B2A,
+	bg-language: #20273D,
 	background-color-logo: rgba(255, 199, 1, 0.1),
+	active: #FFC701,
 );
 
 @function getColor($name) {

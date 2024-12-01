@@ -13,7 +13,99 @@
 	<title>RustyLoot</title>
 </head>
 <body>
-	<header></header>
+	<header class='main'>
+		<div class="main__container">
+			<ul class="main__list">
+				<li class='main__item social'>
+					<a href="./" class="main__list--link discord">
+						<img 
+						src="./img/discord.svg" 
+						alt="">
+					</a>
+					<a href="./" class="main__list--link tweeter">
+						<img 
+						src="./img/tweeter.svg" 
+						alt="">
+					</a>
+				</li>
+				<li class='main__item'>
+					<a href="./" class="main__list--link">
+						LEADERBOARD
+					</a>
+				</li>
+				<li class='main__item'>
+					<a href="./" class="main__list--link active">
+						FREE CASE
+					</a>
+				</li>
+				<li class='main__item'>
+					<a href="./" class="main__list--link">
+						RAKEBACK
+					</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="header__menu">
+			<a href="./" class="menu__logo">
+				<img 
+				class='menu__logo--img' 
+				src="/img/logo-text.svg" 
+				alt="">
+			</a>
+
+			<ul class="header__menu--list">
+				<li class='menu__list--item'>
+					<a href="./" class="menu__list--link">
+						<img
+						class='menu__link--img' 
+						src="/img/protect.svg" 
+						alt="">
+					</a>
+				</li>
+				<li class='menu__list--item'>
+					<a href="./" class="menu__list--link">
+						<img
+						class='menu__link--img' 
+						src="/img/support.svg" 
+						alt="">
+					</a>
+				</li>
+				<li class='menu__list--item'>
+					<a href="./" class="menu__list--link">
+						<img
+						class='menu__link--img' 
+						src="/img/friend.svg" 
+						alt="">
+					</a>
+				</li>
+				<li class='menu__list--item'>
+					<a href="./" class="menu__list--link">
+						<img
+						class='menu__link--img' 
+						src="/img/star.svg" 
+						alt="">
+					</a>
+				</li>
+			</ul>
+			<div class="language__container">
+				<ul class="language__choose">
+					<li>
+						<img class='lang__img' src="/img/eng.svg" alt="">
+					</li>
+					<li>
+						<p class="lang">
+							EN
+						</p>
+					</li>
+					<li>
+						<img class='arrow-lang__img' src="/img/arrow-language.svg" alt="">
+					</li>
+				</ul>
+				<img src="./img/menu-burger.svg" alt="">
+			</div>
+	</nav>
+
+	</header>
 	<main>
 		<article class='menu'>
 			<div class="menu__container">
@@ -79,11 +171,32 @@
 			</div>
 		</article>
 		<section class='hero'>
+
 			<div class="container">
-				<img src="./img/banner-discord-join.png" alt="">
+				<div class="banner">
+					<span class="snowleft"></span>
+					<span class="snowright"></span>
+
+					<img class='img' src="./img/banner-discord-join.png" alt="">
+					
+				</div>
+				
 			</div>
 		</section>
-		<aside class='chat'>1</aside>
+		<aside class='chat'>
+			<div class="chat__container">
+				<div class="chat__infotitle">
+					<p class="chat__title">LIVE CHAT</p>
+					<div class="chat__online--container">
+						<img 
+						class='doth-title'
+						src="./img/point-chatonline.svg" 
+						alt="">
+						<p class='chat__online'>35 ONLINE</p>
+					</div>
+				</div>
+			</div>
+		</aside>
 	</main>
 </body>
 </html>

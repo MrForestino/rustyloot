@@ -1,14 +1,15 @@
 .menu{
 	position: fixed;
+	top: 28px;
 	font-family: getFont('oswald'), sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 150%;
 	color: getColor(text-blue-article);
 	width: 100%;
-	&__container{
-		outline: 1px solid deeppink;
-	}
+	height: 100vh;
+	border-right: 1px solid rgba(86, 95, 115, 0.2);
+
 	&__list{
 		display: flex;
 		flex-direction: column;

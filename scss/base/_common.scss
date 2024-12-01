@@ -6,19 +6,49 @@ body{
 	font-family: getFont('font-family-oswald') , sans-serif;
   font-size: 14px;
   font-weight: 500;
+	overflow-x: hidden;
+}
+
+header{
+	position: relative;
+	z-index: 2;
+	height: 28px;
+	background-color: getColor(dark-blue-article);
 }
 
 main{
 	background-color: getColor(dark-blue-section);
 	display: flex;
 	justify-content: space-between;
+	height: 982px;
+}
+
+section{
+	position: relative;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 115px;
+	margin-left: 119px;
+	margin-right: 352px;
+
+	background-image: url('/img/homepage_bg.png');
+	background-size: cover;
+	background-position: 0 0;
+	background-attachment: fixed;
+	z-index: 1;
+
 }
 article{
+	display: block;
 	background-color: getColor(dark-blue-article);
 	max-width: 87px;
+	flex-shrink: 0;
+	
 }
 aside{
 	width: 320px;
-	height: 999px;
 	background-color: getColor(dark-blue-article);
 }
