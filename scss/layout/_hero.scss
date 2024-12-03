@@ -1,57 +1,51 @@
 .container{
+	max-width: 100%;
 	margin: 0 auto;
 	margin-top: 34px;
 }
 .banner{
+	margin: 0 auto;
 	position: relative;
-	width: 1040px;
-	height: 220px;
+	max-height: 220px;
+	display: flex;
+  justify-content: center;
+}
+.snowleft::before,
+.snowleft::after,
+.snowright::before,
+.snowright::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+
 }
 .snowleft{
 	&::before{
-		content: '';
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 100%;
 		background-image: url(/img/big-snow-banner.svg);
-		background-repeat: no-repeat;
 		top: -30px;
 	}
+
 	&::after{
-		content: '';
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 100%;
+
 		background-image: url(/img/left-down-small-banner.svg);
-		background-repeat: no-repeat;
-		top: 70%;
+		top: 85%;
 	}
 }
 .snowright{
 	&::before{
-		content: '';
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 100%;
 		background-image: url(/img/right-up-snow-banner.svg);
-		background-repeat: no-repeat;
 		top: -20px;
-		left: 83%;
+		left: 72%;
+  	max-width: 152px;
 	}
 	&::after{
 		content: '';
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 100%;
 		background-image: url(/img/right-down-snow-banner.svg);
-		background-repeat: no-repeat;
-		top: 68%;
-		left: 80%;
+		top: 85%;
+  	max-width: 204px; 
+		left: 71%;
 	}
 }
-
-

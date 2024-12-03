@@ -1,0 +1,33 @@
+$break-points: (
+	sm: 320px,
+	md: 575px,
+	lg: 768px,
+	xl: 1200px,
+	xxl: 1900px
+);
+@mixin media($breakpoint) {
+	@if $breakpoint == 'sm' {
+		@media screen and (min-width: getBreakPoint('sm')) {
+			@content;
+		}
+	}@else if $breakpoint == 'md' {
+		@media screen and (min-width: getBreakPoint('md')) {
+			@content;
+		}
+	} @else if $breakpoint == 'lg' {
+		@media screen and (min-width: getBreakPoint('lg')) {
+			@content;
+		}
+	} @else if $breakpoint == 'xl' {
+		@media screen and (min-width: getBreakPoint('xl')) {
+			@content;
+		}
+	} @else if $breakpoint == 'xxl' {
+		@media screen and (min-width: getBreakPoint('xxl')) {
+			@content;
+		}
+	}
+}
+@function getBreakPoint($key) {
+	@return map-get($break-points, $key);
+}

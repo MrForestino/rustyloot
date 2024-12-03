@@ -1,13 +1,17 @@
 @import "./base/reset";
 @import "./utils/fonts";
 @import "./utils/colors";
+@import "./utils/mixins";
 @import "./base/common";
 @import "./utils/mixin";
 @import "./utils/placeholder";
 @import "./utils/mixins";
 @import "./components/containers";
 
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/menu";
 @import "./layout/chat";
+@import "./layout/minigamescards";
+@import "./utils/mobile";

@@ -39,6 +39,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   overflow-x: hidden;
+  background-color: #161926;
 }
 
 header {
@@ -63,12 +64,10 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 115px;
-  margin-left: 119px;
-  margin-right: 352px;
-  background-image: url("/img/homepage_bg.png");
+  margin-left: 30px;
+  background-image: url("/img/homepage_bg_CropPurpureDown.png");
   background-size: cover;
-  background-position: 0 0;
-  background-attachment: fixed;
+  background-position: center;
   z-index: 1;
 }
 
@@ -79,9 +78,35 @@ article {
   flex-shrink: 0;
 }
 
-aside {
-  width: 320px;
-  background-color: #131620;
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 575px) {
+  .container {
+    max-width: 575px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    width: 1040px;
+  }
+}
+@media (min-width: 1900px) {
+  .container {
+    max-width: 1900px;
+  }
 }
 
 .header__menu {
@@ -89,7 +114,6 @@ aside {
   background-color: #161B2A;
   height: 88px;
   display: flex;
-  margin: 4px 320px 0 87px;
   margin-left: 87px;
   align-items: center;
   justify-content: space-between;
@@ -176,58 +200,52 @@ aside {
 }
 
 .container {
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 34px;
 }
 
 .banner {
+  margin: 0 auto;
   position: relative;
-  width: 1040px;
-  height: 220px;
+  max-height: 220px;
+  display: flex;
+  justify-content: center;
 }
 
-.snowleft::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/big-snow-banner.svg);
-  background-repeat: no-repeat;
-  top: -30px;
-}
-.snowleft::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/left-down-small-banner.svg);
-  background-repeat: no-repeat;
-  top: 70%;
-}
-
-.snowright::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/right-up-snow-banner.svg);
-  background-repeat: no-repeat;
-  top: -20px;
-  left: 83%;
-}
+.snowleft::before,
+.snowleft::after,
+.snowright::before,
 .snowright::after {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url(/img/right-down-snow-banner.svg);
   background-repeat: no-repeat;
-  top: 68%;
-  left: 80%;
+}
+
+.snowleft::before {
+  background-image: url(/img/big-snow-banner.svg);
+  top: -30px;
+}
+.snowleft::after {
+  background-image: url(/img/left-down-small-banner.svg);
+  top: 85%;
+}
+
+.snowright::before {
+  background-image: url(/img/right-up-snow-banner.svg);
+  top: -20px;
+  left: 72%;
+  max-width: 152px;
+}
+.snowright::after {
+  content: "";
+  background-image: url(/img/right-down-snow-banner.svg);
+  top: 85%;
+  max-width: 204px;
+  left: 71%;
 }
 
 .menu {
@@ -238,14 +256,15 @@ aside {
   font-size: 14px;
   line-height: 150%;
   color: #666E97;
-  width: 100%;
   height: 100vh;
   border-right: 1px solid rgba(86, 95, 115, 0.2);
+  z-index: 2;
 }
 .menu__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 87px;
 }
 .menu__item {
   display: flex;
@@ -329,4 +348,13 @@ aside {
 .chat__online--container {
   display: flex;
   align-items: center;
+}
+
+.minigames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
 }/*# sourceMappingURL=main.css.map */
